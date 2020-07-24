@@ -2,16 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="ZEN Delicatessen Website">
+    <meta name="keywords" content="ZenDeli, Zen, Deli, Delicatessen">
+    <meta name="author" content="KodingKamp">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zen Delicatessen</title>
     <link rel="stylesheet" type="text/css" href="src/styling.css">
     <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
-</head>
-<body>
-    <header>
-        <h1>Zen Delicatessen</h1>
-    </header>
     
-    <main>
+</head>
+
+<body>
+    <!-- Header Nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand ml-1" href="#">
+            <img src="assets/ZenDeli.png" width="128px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="Menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="Location">Location</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="About">About us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    <!-- Main Body -->
+    <div class="main-body m-0">
         <section>
             <h2>
                 Website Under Developement
@@ -22,20 +51,98 @@
                 Please check back later!
             </p>
         </article>
-    </main>
+    </div>
     
-    <aside>
-    </aside>
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row bg-secondary m-0 p-4 text-light">
+            <div class="col col-12 col-md-4 py-3 d-flex justify-content-center">
+                <div class="text-center">
+                    <h5 class="text-secondary mb-3">
+                        <i class="far fa-compass"></i>&nbsp;VISIT US
+                    </h5>
+                    <div>ZEN Delicatessen</div>
+                    <div>15880 San Carlos Blvd</div>
+                    <div>Suite #135</div>
+                    <div>Fort Myers, FL 33908</div>
+                    <div class="mt-2">(239) XXX - XXXX</div>
+                </div>
+            </div>
+            
+            <div class="col col-12 col-md-4 py-3 d-flex justify-content-center">
+                <div class="text-center">
+                    <h5 class="text-secondary mb-3">
+                        <i class="far fa-clock"></i>&nbsp;HOURS
+                    </h5>
+                    <div class="row">
+                        <span class="col col-6 text-left">Monday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row">
+                        <span class="col col-6 text-left">Tuesday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row">
+                        <span class="col col-6 text-left">Wednesday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row">
+                        <span class="col col-6 text-left">Thursday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row">
+                        <span class="col col-6 text-left">Friday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row">
+                        <span class="col col-6 text-left">Saturday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row">
+                        <span class="col col-6 text-left">Sunday</span>
+                        <span class="col col-6 text-right">TBD</span>
+                    </div>
+                    <div class="row"></div>
+                </div>
+            </div>
+
+            <div class="col col-12 col-md-4 py-3 d-flex justify-content-center">
+                <div class="text-center">
+                    <h5 class="text-secondary mb-3">
+                        <i class="fas fa-mobile-alt"></i>&nbsp;Follow Us
+                    </h5>
+                    <div class="row p-3 text-light">
+                        <div class="col col-4 d-flex justify-content-center">
+                            <a href="https://www.facebook.com/zendelicatessen" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+                        <div class="col col-4 d-flex justify-content-center">
+                            <a href="https://www.instagram.com/zendelicatessen" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                        <div class="col col-4 d-flex justify-content-center">
+                            <a href="https://www.twitter.com/zendelicatessen" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row my-4">
+            <span class="col-12 text-center">
+                &copy; 2020 ZEN Delicatessen, LLC - all rights reserved
+            </span>
+        </div>
+    </div>
     
-    <footer>
-        <label class="footer-content">
-            ZEN Delicatessen, LLC - all rights reserved
-        </label>
-    </footer>
-    
+    <!-- Loaded Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="src/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <script src="https://kit.fontawesome.com/0f8543b888.js" crossorigin="anonymous"></script>
     <script src="src/app.js"></script>
 </body>
 </html>
