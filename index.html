@@ -13,12 +13,12 @@
 
 <body>
     <!-- Header Nav -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand ml-1" href="#">
-                <img src="assets/ZenDeli.png" width="128px">
+                <img src="assets/ZenDeli.png" width="96px">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
@@ -27,18 +27,43 @@
                     <a class="nav-item nav-link disabled" href="Locations">Locations</a>
                     <a class="nav-item nav-link disabled" href="AboutUs">About us</a>
                 </div>
-            </div>
+            </div> -->
         </nav>
     </header>
     
     <!-- Main Body -->
-    <div class="main-body col justify-content-center align-items-center text-center">
-        <div class="display-4 text-warning">
-            <i class="fas fa-exclamation-triangle"></i>
-            <div>Website Under Developement</div>
-        </div>
-        <div class="mt-4 display-5">
-            Please come back later.
+    <div class="main-body justify-content-center py-4">
+        <div class="col">
+            <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+                <div class="display-4 mb-2 text-warning">Come Visit Us</div>
+                <p>
+                    Starting July 26th, we are open at 
+                    <a onclick="mapSelect()" href="">
+                        FleaMasters Flea Martket
+                    </a>!
+                </p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col col-8">
+                    <div class="row justify-content-around">
+
+                        <div class="col col-12 col-lg-4 text-center py-2">
+                            <img class="border border-dark" src="assets/ZenDeli_StallLocation.jpg" height="256px">
+                        </div>
+
+                        <div class="col col-12 col-lg-6 py-2">
+                            <div class="row justify-content-center">                                
+                                <p>
+                                    We would like to invite everyone to come have a taste
+                                    of Zen Deli at FleaMasters Flea Market in Fort Myers 
+                                    on Fridays, Saturdays & Sundays!
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
@@ -51,19 +76,24 @@
                         <i class="far fa-compass"></i>&nbsp;VISIT US
                     </h5>
                     <!-- Main Campus -->
-                    <div class="display-5"><h5>ZEN Delicatessen</h5></div>
+                    <!-- <div class="display-5"><h5>ZEN Delicatessen</h5></div>
                     <div>15880 San Carlos Blvd</div>
                     <div>Suite #135</div>
                     <div>Fort Myers, FL 33908</div>
                     <div class="mt-2">
-                        <!-- Main Campus:&nbsp; -->
-                        <!-- <a class="text-light" href="tel:239-362-3049">
+                        <a class="text-light" href="tel:239-362-3049">
                             (239) 362 - 3049
-                        </a> -->
-                        (239) ### - ####
-                        <!-- Flea Market -->
+                        </a> 
+                    </div> -->
+
+                    <!-- Flea Market Stall -->
+                    <div>ZEN Delicatessen - Food Stall</div>
+                    <div>Fleamasters Flea Market</div>
+                    <div>4135 Dr Martin Luther King Jr. Blvd.</div>
+                    <div>Fort Myers, FL 33916</div>
+
                         <!-- (239) -->
-                    </div>
+
                 </div>
             </div>
             
@@ -73,32 +103,32 @@
                         <i class="far fa-clock"></i>&nbsp;HOURS
                     </h5>
                     <div class="row">
-                        <span class="col col-6 text-left">Monday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Monday</span>
+                        <span class="col col-8 text-right">Closed</span>
                     </div>
                     <div class="row">
-                        <span class="col col-6 text-left">Tuesday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Tuesday</span>
+                        <span class="col col-8 text-right">Closed</span>
                     </div>
                     <div class="row">
-                        <span class="col col-6 text-left">Wednesday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Wednesday</span>
+                        <span class="col col-8 text-right">Closed</span>
                     </div>
                     <div class="row">
-                        <span class="col col-6 text-left">Thursday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Thursday</span>
+                        <span class="col col-8 text-right">Closed</span>
                     </div>
                     <div class="row">
-                        <span class="col col-6 text-left">Friday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Friday</span>
+                        <span class="col col-8 text-right">TBA</span>
                     </div>
                     <div class="row">
-                        <span class="col col-6 text-left">Saturday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Saturday</span>
+                        <span class="col col-8 text-right">TBA</span>
                     </div>
                     <div class="row">
-                        <span class="col col-6 text-left">Sunday</span>
-                        <span class="col col-6 text-right">TBD</span>
+                        <span class="col col-4 text-left">Sunday</span>
+                        <span class="col col-8 text-right">10 AM - 1 PM</span>
                     </div>
                     <div class="row"></div>
                 </div>
@@ -110,13 +140,13 @@
                         <i class="fas fa-mobile-alt"></i>&nbsp;Follow Us
                     </h5>
                     <div class="p-3 text-light">
-                        <a href="https://www.facebook.com/zendelicatessen" target="_blank">
+                        <a class="mx-2" href="https://www.facebook.com/zendelicatessen" target="_blank">
                             <i class="fab fa-facebook-f">&nbsp;facebook</i>
                         </a>
-                        <a href="https://www.instagram.com/zendelicatessen" target="_blank">
+                        <a class="mx-2" href="https://www.instagram.com/zendelicatessen" target="_blank">
                             <i class="fab fa-instagram">&nbsp;instagram</i>
                         </a>
-                        <a href="https://www.twitter.com/zendelicatessen" target="_blank">
+                        <a class="mx-2" href="https://www.twitter.com/zendelicatessen" target="_blank">
                             <i class="fab fa-twitter">&nbsp;twitter</i>
                         </a>
                     </div>
