@@ -7,7 +7,8 @@
     <meta name="author" content="KodingKamp">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zen Delicatessen</title>
-    <link rel="stylesheet" type="text/css" href="src/styling.css">
+    <link rel="stylesheet" type="text/css" href="src/headerandfooter.css">
+    <link rel="stylesheet" type="text/css" href="src/index.css">
     <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
 </head>
 
@@ -15,55 +16,81 @@
     <!-- Header Nav -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
-            <a class="navbar-brand ml-1" href="#">
+            <a class="navbar-brand ml-1" href="index.html">
                 <img src="assets/ZenDeli.png" width="96px">
             </a>
-            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link disabled" href="Menu">Menu</a>
-                    <a class="nav-item nav-link disabled" href="Locations">Locations</a>
-                    <a class="nav-item nav-link disabled" href="AboutUs">About us</a>
+                    <!-- <a class="nav-item nav-link active text-primary" href="index.html">Home</a> -->
+                    <!-- <a class="nav-item nav-link" href="menu.html">Menu</a> -->
+                    <!-- <a class="nav-item nav-link disabled" href="locations.html">Locations</a> -->
+                    <!-- <a class="nav-item nav-link disabled" href="aboutus.html">About us</a> -->
                 </div>
-            </div> -->
+                <div class="navbar-nav navbar-right">
+                    <span class="navbar-text">Flea Market Stand:&nbsp;
+                        <a href="tel:239-313-5272">
+                            <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
+                        </a>
+                    </span>
+                </div>
+            </div>
         </nav>
     </header>
     
     <!-- Main Body -->
-    <div class="main-body justify-content-center py-4">
-        <div class="col">
-            <div class="d-flex flex-column justify-content-center align-items-center mb-4">
-                <div class="display-4 mb-2 text-warning">Come Visit Us</div>
-                <p>
-                    Starting July 26th, we are open at 
-                    <a onclick="mapSelect()" href="">
-                        FleaMasters Flea Martket
-                    </a>!
-                </p>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col col-8">
-                    <div class="row justify-content-around">
 
-                        <div class="col col-12 col-lg-4 text-center py-2">
-                            <img class="border border-dark" src="assets/ZenDeli_StallLocation.jpg" height="256px">
-                        </div>
+    <!-- jumbotron -->
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <h1 class="jumbotron-title display-4 text-light text-center text-uppercase p-5 w-100 mb-0">
+                    Zen Delicatessen
+            </h1>
+            <p class="lead"></p>
+        </div>
+    </div>
 
-                        <div class="col col-12 col-lg-6 py-2">
-                            <div class="row justify-content-center">                                
-                                <p>
-                                    We would like to invite everyone to come have a taste
-                                    of Zen Deli at FleaMasters Flea Market in Fort Myers 
-                                    on Fridays, Saturdays & Sundays!
-                                </p>
-                            </div>
-                        </div>
+    <div class="main-body row d-flex justify-content-center py-4">
+        <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+            <div class="body-title display-4 mb-2 text-warning text-center">Come Visit Us</div>
+            <p>
+                We are open at 
+                <a onclick="mapSelect()" href="">
+                    FleaMasters Flea Martket
+                </a>!
+            </p>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col col-8">
+                <div class="row justify-content-around">
 
+                    <div class="col col-12 col-lg-4 text-center px-0 pb-4">
+                        <img class="border border-dark" src="assets/ZenDeli_StallLocation.jpg" width="240px">
                     </div>
+
+                    <div class="col col-12 col-lg-6 py-2">
+                        <div class="row justify-content-center">                                
+                            <p>
+                                We would like to invite everyone to come have a taste
+                                of Zen Deli at FleaMasters Flea Market in Fort Myers 
+                                on Fridays, Saturdays & Sundays!
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </div>
+        <div>
+            
+        </div>
+    
+        <div class="row justify-content-center">
+            <h4 class="text-info text-center text-wrap">
+                Menu Coming Soon!
+            </h4>
         </div>
     </div>
     
@@ -87,13 +114,13 @@
                     </div> -->
 
                     <!-- Flea Market Stall -->
-                    <div>ZEN Delicatessen - Food Stall</div>
+                    <div class="font-weight-bold text-warning">ZEN Delicatessen</div>
                     <div>Fleamasters Flea Market</div>
-                    <div>4135 Dr Martin Luther King Jr. Blvd.</div>
+                    <div>4135 Dr. Martin Luther King Jr. Blvd.</div>
                     <div>Fort Myers, FL 33916</div>
                     <div class="mt-2">
                         <a class="text-light" href="tel:239-313-5272">
-                            (239) 313 - 5272
+                            <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
                         </a> 
                     </div> 
 
@@ -133,7 +160,6 @@
                         <span class="col col-4 text-left">Sunday</span>
                         <span class="col col-8 text-right">9 AM - 5 PM</span>
                     </div>
-                    <div class="row"></div>
                 </div>
             </div>
         
@@ -142,14 +168,14 @@
                     <h5 class="text-warning mb-1">
                         <i class="fas fa-mobile-alt"></i>&nbsp;Follow Us
                     </h5>
-                    <div class="p-3 text-light">
-                        <a class="mx-2" href="https://www.facebook.com/zendelicatessen" target="_blank">
+                    <div class="p-3 text-light d-flex flex-row flex-md-column lead">
+                        <a class="m-2" href="https://www.facebook.com/zendelicatessen" target="_blank">
                             <i class="fab fa-facebook-f">&nbsp;facebook</i>
                         </a>
-                        <a class="mx-2" href="https://www.instagram.com/zendelicatessen" target="_blank">
+                        <a class="m-2" href="https://www.instagram.com/zendelicatessen" target="_blank">
                             <i class="fab fa-instagram">&nbsp;instagram</i>
                         </a>
-                        <a class="mx-2" href="https://www.twitter.com/zendelicatessen" target="_blank">
+                        <a class="m-2" href="https://www.twitter.com/zendelicatessen" target="_blank">
                             <i class="fab fa-twitter">&nbsp;twitter</i>
                         </a>
                     </div>
@@ -157,8 +183,9 @@
             </div>
         </div>
         <div class="d-flex justify-content-center py-4">
-            <span class="text-center">
-                &copy; Copyright 2020 ZEN Delicatessen, LLC. All rights reserved.
+            <span class="text-center d-flex flex-column flex-md-row">
+                <span class="px-1">&copy; Copyright 2020 ZEN Delicatessen, LLC.</span>
+                <span class="px-1">All rights reserved.</span>
             </span>
         </div>
     </footer>

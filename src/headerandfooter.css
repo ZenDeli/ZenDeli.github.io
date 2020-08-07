@@ -1,0 +1,17 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+header {
+    box-shadow: 0 2px 5px rgba(104, 104, 104, 0.788);
+}
+.fab {
+    color: var(--light) !important;
+}
+.fab:hover {
+    color: var(--warning) !important;
+}
+.nav-link:hover {
+    font-size: large;
+    font-weight: 600;
+}

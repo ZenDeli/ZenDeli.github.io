@@ -1,0 +1,19 @@
+.main-body {
+    background: rgb(245, 255, 245);
+}
+
+.body-title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.jumbotron {
+    background-image: url("/assets/Jumbotron.jpeg");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    height: calc(100vh - 95px);
+}
+
+.jumbotron-title {
+    background: rgba(212, 212, 212, 0.466);
+}
