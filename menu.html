@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zen Delicatessen</title>
     <link rel="stylesheet" type="text/css" href="src/headerandfooter.css">
-    <link rel="stylesheet" type="text/css" href="src/index.css">
+    <link rel="stylesheet" type="text/css" href="src/menu.css">
     <link rel="stylesheet" type="text/css" href="src/bootstrap.min.css">
 </head>
 
@@ -41,21 +41,296 @@
     </header>
     
     <!-- Main Body -->
+    <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <h1 class="jumbotron-title display-4 text-white text-center text-uppercase px-sm-5 py-5 w-100 mb-0">
+                    Food Menu
+            </h1>
+        </div>
+    </div>
+
     <div class="main-body d-flex justify-content-center py-4">
-        <div class="row justify-content-center">
-            <h4 class="text-info text-center text-wrap">
-                Interactive Menu Coming Soon!
-            </h4>
-            <div>
-                <img src="assets/Full_Menu.png" class="img-fluid">
+        <div class="row container">
+            <div class="col-12 text-center">Click on a menu item to open item details.</div>
+            <div class="col col-lg-4 background-grey p-4 mt-4">
+                <div class="text-center">
+                    <div class="flex-column d-flex pb-3">
+                        <h3>Soups</h3>
+                        <span>(Weekly chef's choice)</span>
+                        <div class="my-1">Cup - $4.25</div>
+                        <div class="my-1">Bowl - $5.75</div>
+                    </div>
+                    <hr>
+                    <div class="flex-column d-flex py-3">
+                        <h3>Appetizers</h3>
+                        <span>$5.95</span>
+                        <div class="my-1 menu-item" onclick="showFoodModal('EggRolls')"><label>Vietnamese Egg Rolls (5)</label></div>
+                        <div class="my-1 menu-item" onclick="showFoodModal('VeggieRolls')"><label>Veggie Rolls (5)&nbsp;<i class="fas fa-leaf"></i></label></div>
+                        <div class="my-1 menu-item" onclick="showFoodModal('EggRollNuggets')"><label>Egg Roll Nuggets (12)</label></div>
+                        <div class="my-1 menu-item" onclick="showFoodModal('ShrimpRolls')"><label>Shrimp Rolls (5)</label></div>
+                        <div class="my-1 menu-item" onclick="showFoodModal('CrabRangoons')"><label>Crab Rangoons (8)</label></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="pt-3">
+                    <div class="flex-column d-flex">
+                        <div class="text-center">
+                            <h3>Rye Sandwiches</h3>
+                            <div>(Sliced Rye Bread)</div>
+                            <span>$8.95</span>
+                        </div>
+                        <div class="mt-3 menu-item" onclick="showFoodModal('ZenSpecial')">
+                            <h5 class="text-success">Zen Special</h5>
+                            <div class="ml-2 text-truncate">Pastrami, Capicola, ... view more</div>
+                        </div>
+                        <div class="mt-2 menu-item" onclick="showFoodModal('NewYorker')">
+                            <h5 class="text-success">New Yorker</h5>
+                            <div class="ml-2 text-truncate">Corned Beef, Pastrami, ... view more</div>
+                        </div>
+                        <div class="mt-2 menu-item" onclick="showFoodModal('PastramiOnRye')">
+                            <h5 class="text-success">Pastrami On Rye</h5>
+                            <div class="ml-2 text-truncate">Pastrami, Swiss, ... view more</div>
+                        </div>
+                        <div class="mt-2 menu-item" onclick="showFoodModal('TurkeyReuben')">
+                            <h5 class="text-success">Turkey Reuben</h5>
+                            <div class="ml-2 text-truncate">Turkey, Ham, ... view more</div>
+                        </div>
+                        <div class="mt-2 menu-item" onclick="showFoodModal('Reuben')">
+                            <h5 class="text-success">Reuben</h5>
+                            <div class="ml-2 text-truncate">Corned Beef, Kraut, ... view more</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 p-4">
+                <div class="text-center">
+                    <h3>Sub-Sandwiches</h3>
+                    <div>(White or Wheat)</div>
+                    <div>12" (Whole) - $9.95</div>
+                    <div>6" (Half) - $5.95</div>
+                </div>
+                <div class="mt-4 menu-item" onclick="showFoodModal('SecretGarden')">
+                    <h5 class="text-primary">Secret Garden&nbsp;<i class="fas fa-leaf text-body"></i></h5>
+                    <div class="ml-2 text-truncate">Vegan Meat, Swiss, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('TheItalian')">
+                    <h5 class="text-primary">The Italian</h5>
+                    <div class="ml-2 text-truncate">Capicola, Ham, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('HarmonieClub')">
+                    <h5 class="text-primary">Hermonie Club</h5>
+                    <div class="ml-2 text-truncate">Corned Beef, Pastrami, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('BBQSteakHouse')">
+                    <h5 class="text-primary">BBQ Steak House</h5>
+                    <div class="ml-2 text-truncate">Roast Beef, Cheddar, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('AllAmerican')">
+                    <h5 class="text-primary">All American</h5>
+                    <div class="ml-2 text-truncate">Roast Beef, Cheddar, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('SrirachaTurkey')">
+                    <h5 class="text-primary">Sriracha Turkey</h5>
+                    <div class="ml-2 text-truncate">Turkey, Chilis, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('TranquilTurkey')">
+                    <h5 class="text-primary">Tranquil Turkey</h5>
+                    <div class="ml-2 text-truncate">Turkey, Extra Swiss, ... view more</div>
+                </div>
+                <div class="mt-3 menu-item" onclick="showFoodModal('ClubHouse')">
+                    <h5 class="text-primary">Club House</h5>
+                    <div class="ml-2 text-truncate">Ham, Turkey, ... view more</div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 background-grey p-4">
+                <div class="pb-3">
+                    <div class="text-center">
+                        <h3>Vietnamese Sandwiches</h3>
+                        <div>(French Hoagie)</div>
+                        <div>$6.95</div>
+                    </div>
+                    <div class="mt-4 menu-item" onclick="showFoodModal('ZenCombo')">
+                        <h5 class="text-success">Zen Combination</h5>
+                        <div class="ml-2 text-truncate">BBQ Pork, Pork Roll, ... view more</div>
+                    </div>
+                    <div class="mt-3 menu-item" onclick="showFoodModal('TofuDelight')">
+                        <h5 class="text-success">Tofu Delight&nbsp;<i class="fas fa-leaf text-body"></i></h5>
+                        <div class="ml-2 text-truncate">Fried Tofu, Vegan Pate, ... view more</div>
+                    </div>
+                    <div class="mt-3 menu-item" onclick="showFoodModal('PorkRoll&Pate')">
+                        <h5 class="text-success">Pork Roll & Pate</h5>
+                        <div class="ml-2 text-truncate">Pork Roll, Pate, ... view more</div>
+                    </div>
+                    <div class="mt-3 menu-item" onclick="showFoodModal('ZenVeggie')">
+                        <h5 class="text-success">Zen Veggie&nbsp;<i class="fas fa-leaf text-body"></i></h5>
+                        <div class="ml-2 text-truncate">Vegan Meat & Pate, ... view more</div>
+                    </div>
+                </div>
+                <hr>
+                <div class="pt-3">
+                    <div class="text-center">
+                        <h3>Combination Plates</h3>
+                    </div>
+                    <div class="mt-4">
+                        <div class="d-flex justify-content-center justify-content-lg-between">
+                            <h5 class="text-warning-2 mr-4 mr-4">Combination #1</h5>
+                            <label>$11.75</label>
+                        </div>
+                        <div class="ml-2 text-center text-lg-left">Rye Sandwhich + Soup (cup)</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center justify-content-lg-between">
+                            <h5 class="text-warning-2 mr-4">Combination #2</h5>
+                            <label>$10.50</label>
+                        </div>
+                        <div class="ml-2 text-center text-lg-left">Rye Sandwich + 2 Egg Rolls</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center justify-content-lg-between">
+                            <h5 class="text-warning-2 mr-4">Combination #3</h5>
+                            <label>$8.75</label>
+                        </div>
+                        <div class="ml-2 text-center text-lg-left">6" Sub-Sandwich + Soup (cup)</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center justify-content-lg-between">
+                            <h5 class="text-warning-2 mr-4">Combination #4</h5>
+                            <label>$7.95</label>
+                        </div>
+                        <div class="ml-2 text-center text-lg-left">6" Sub-Sandwich + 2 Egg Rolls</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center justify-content-lg-between">
+                            <h5 class="text-warning-2 mr-4">Combination #5</h5>
+                            <label>$9.75</label>
+                        </div>
+                        <div class="ml-2 text-center text-lg-left">Vietnamese Sandwich + Soup (cup)</div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="d-flex justify-content-center justify-content-lg-between">
+                            <h5 class="text-warning-2 mr-4">Combination #6</h5>
+                            <label>$8.95</label>
+                        </div>
+                        <div class="ml-2 text-center text-lg-left">Vietnamese Sandwich + 2 Egg Rolls</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-1">
+                <div class="row">
+                    <div class="col-lg-4 col-12 d-flex align-items-center text-center menu-drink-image">
+                        <!-- <img src="assets/Gradient_small.png" width="100%"> -->
+                    </div>
+                    <div class="col-lg-4 col-12 align-items-center d-flex flex-column p-4">
+                        <h3>Drinks</h3>
+                        <small class="text-muted">Click a drink to view flavor options</small>
+                        <div class="menu-item mt-3" onclick="showDrinksModal('FruitDrinks')">
+                            <label>Fruit Drinks - $3.95</label>
+                        </div>
+                        <div class="menu-item" onclick="showDrinksModal('FruitTeas')">
+                            <label>Fruit Flavored Teas - $4.50</label>
+                        </div>
+                        <div class="menu-item" onclick="showDrinksModal('Smoothies')">
+                            <label>Smoothies - $4.95</label>
+                        </div>
+                        <div class="menu-item" onclick="showDrinksModal('MilkTeas')">
+                            <label>Milk Teas - $4.65</label>
+                        </div>
+                        <!-- <div class="menu-item" onclick="showDrinksModal('AddOns')">
+                            <label>Add Ons:</label>
+                        </div> -->
+                    </div>
+                    <div class="col-lg-4 col-12 d-flex align-items-center text-center menu-drink-image">
+                        <img class="menu-item" src="assets/food/WinterWaterMilk.JPG" alt="Winter Melon (left) and Watermelon (right) milk teas" width="100%" onclick="showDrinksModal('MilkTeas')">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- Hidden Food Detail Modal -->
+    <div class="modal fade" id="food-detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" id="food-modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="food-modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center" id="food-modal-body-content">
+                            <div class="col-12 col-lg-6 my-2" id="food-modal-body-content-dialog">
+                                <h3 id="food-modal-body-title"></h3>
+                                <div class="d-flex justify-content-between">
+                                    <label id="food-modal-item-type"></label>
+                                    <div id="food-modal-price" class="d-flex flex-column text-right"></div>
+                                </div>
+                                <div class="mt-3 modal-ingredients-container px-3 py-2">
+                                    <h5>Contains:</h5>
+                                    <p id="food-modal-ingredients" class="m-0"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Drinks Detail Modal -->
+    <div class="modal fade" id="drinks-detail-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" id="drinks-modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="drinks-modal-title"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center" id="drinks-modal-body-content">
+                            <div class="col-12 col-lg-6 my-2" id="drinks-modal-body-content-dialog">
+                                <div class="d-flex justify-content-between">
+                                    <h3 id="drinks-modal-body-title"></h3>
+                                    <div id="drinks-modal-price" class="d-flex flex-column text-right"></div>
+                                </div>
+                                <div id="drinks-modal-description" class="py-3"></div>
+                                <div class="mt-3 modal-flavors-container px-3 py-2">
+                                    <div class="py-2">
+                                        <div>
+                                            <h5>Flavors:</h5>
+                                            <ul id="drinks-modal-flavors" class="ml-4"></ul>
+                                        </div>
+                                        <div class="mt-4">
+                                            <h5>Add-Ons:</h5>
+                                            <ul class="ml-4">
+                                                <li>Honey Boba</li>
+                                                <li>Coffee Jelly</li>
+                                                <li>Lychee Bursting Pearl</li>
+                                                <li>Strawberry Bursting Pearl</li>
+                                                <li>Orange Bursting Pearl</li>
+                                                <li>Mango Bursting Pearl</li>
+                                                <li>Sea Salt Cream</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="row bg-secondary m-0 p-4 text-light">
-            <div class="col col-12 col-md-4 py-3 d-flex justify-content-center">
+            <div class="col col-12 col-lg-4 py-3 d-flex justify-content-center">
                 <div class="text-center">
                     <h5 class="text-warning mb-3">
                         <i class="far fa-compass"></i>&nbsp;VISIT US
@@ -85,7 +360,7 @@
                 </div>
             </div>
             
-            <div class="col col-12 col-md-4 py-3 d-flex justify-content-center">
+            <div class="col col-12 col-lg-4 py-3 d-flex justify-content-center">
                 <div class="text-center">
                     <h5 class="text-warning mb-3">
                         <i class="far fa-clock"></i>&nbsp;HOURS
@@ -121,7 +396,7 @@
                 </div>
             </div>
         
-            <div class="col col-12 col-md-4 py-3 d-flex justify-content-center">
+            <div class="col col-12 col-lg-4 py-3 d-flex justify-content-center">
                 <div class="text-center">
                     <h5 class="text-warning mb-1">
                         <i class="fas fa-mobile-alt"></i>&nbsp;Follow Us
@@ -153,6 +428,7 @@
     <script src="src/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
     <script src="https://kit.fontawesome.com/0f8543b888.js" crossorigin="anonymous"></script>
-    <script src="src/app.js"></script>
+    <script src="src/MenuItems.js"></script>
+    <script src="src/menu.js"></script>
 </body>
 </html>
