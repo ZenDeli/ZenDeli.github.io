@@ -415,7 +415,7 @@ const DrinkItems = [
             "Winter Melon",
             "Hibiscus",
         ],
-        Image: "FruitDrink.JPG",
+        Image: "FruitDrink.jpg",
     },
     {
         Name: "FruitTeas",
