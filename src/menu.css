@@ -26,9 +26,20 @@
 
 .menu-item:hover {
     cursor: pointer;
-    font-style: italic !important;
 }
 
-h3 {
+.menu-item:hover * {
+    cursor: pointer;
+    font-style: italic;
+    font-weight: 600 !important;
+}
+
+.modal-ingredients-container,
+.modal-flavors-container {
+    background: rgb(240, 247, 246);
+    border-radius: 5px;
+}
+
+h3, h5 {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
