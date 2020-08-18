@@ -31,6 +31,7 @@ const showFoodModal = (item) => {
             foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
             foodImage.setAttribute("atl", foodItem.DisplayName);
             foodImage.setAttribute("title", foodItem.ImageName);
+            foodImage.setAttribute("width", "100");
         } else {
             foodImage = document.createElement("IMG");
             foodImage.setAttribute("id", "food-modal-image");
@@ -38,6 +39,7 @@ const showFoodModal = (item) => {
             foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
             foodImage.setAttribute("atl", foodItem.DisplayName);
             foodImage.setAttribute("title", foodItem.ImageName);
+            foodImage.setAttribute("width", "100");
             document.getElementById("food-modal-body-content").prepend(foodImage);
         }
     }
@@ -102,6 +104,7 @@ const showDrinksModal = (item) => {
            foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
            foodImage.setAttribute("atl", drinkItem.DisplayName);
            foodImage.setAttribute("title", drinkItem.ImageName);
+           foodImage.setAttribute("width", "100");
        } else {
            foodImage = document.createElement("IMG");
            foodImage.setAttribute("id", "drinks-modal-image");
@@ -109,6 +112,7 @@ const showDrinksModal = (item) => {
            foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
            foodImage.setAttribute("atl", drinkItem.DisplayName);
            foodImage.setAttribute("title", drinkItem.ImageName);
+           foodImage.setAttribute("width", "100");
            document.getElementById("drinks-modal-body-content").prepend(foodImage);
        }
    }
