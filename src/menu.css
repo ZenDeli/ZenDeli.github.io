@@ -34,6 +34,10 @@
     font-weight: 600 !important;
 }
 
+.modal {
+    max-height: 98vh;
+}
+
 .modal-ingredients-container,
 .modal-flavors-container {
     background: rgb(240, 247, 246);
