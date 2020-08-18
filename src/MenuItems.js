@@ -13,16 +13,15 @@ const FoodItems = [
             "Carrots",
             "Glass Noodles",
             "Onions",
-            "Spring Roll Wrapper"
         ],
-        Image: null,
+        Image: "Egg_Rolls.png",
     },
     {
         Name: "VeggieRolls",
         Title: 'Veggie Rolls',
         DisplayName: 'Veggie Rolls (5)&nbsp;<i class="fas fa-leaf text-success"></i>',
         ItemType: "Appetizer",
-        Description: null,
+        Description: "Vegan friendly option",
         Price: "$5.95",
         Ingredients: [
             "Tofu",
@@ -30,7 +29,6 @@ const FoodItems = [
             "Carrots",
             "Glass Noodles",
             "Onions",
-            "Spring Roll Wrapper"
         ],
         Image: null,
     },
@@ -45,7 +43,6 @@ const FoodItems = [
             "Pork",
             "Shrimp",
             "Shredded Taro",
-            "Rice Paper"
         ],
         Image: null,
     },
@@ -57,10 +54,9 @@ const FoodItems = [
         Description: null,
         Price: "$5.95",
         Ingredients: [
-            "Shrimp",
-            "Spring Roll Wrapper"
+            "Shrimp wrapped in Spring Roll Wrapper",
         ],
-        Image: null,
+        Image: "Shrimp_Roll.png",
     },
     {
         Name: "CrabRangoons",
@@ -70,12 +66,12 @@ const FoodItems = [
         Description: null,
         Price: "$5.95",
         Ingredients: [
-            "Imitation Crab Meat",
+            "Krab Meat",
             "Cream Cheese",
             "Scallions",
             "Wonton Wrapper"
         ],
-        Image: null,
+        Image: "Crab_Rangoon.png",
     },
     {
         Name: "ZenSpecial",
@@ -95,7 +91,7 @@ const FoodItems = [
             "Italian Dressing", 
             "House Dressing",
         ],
-        Image: null,
+        Image: "Zen_Special.png",
     },
     {
         Name: "NewYorker",
@@ -112,7 +108,7 @@ const FoodItems = [
             "House Dressing",
             "Deli Mustard",
         ],
-        Image: "NewYorker.png",
+        Image: "New_Yorker.png",
     },
     {
         Name: "PastramiOnRye",
@@ -129,7 +125,7 @@ const FoodItems = [
             "House Dressing",
             "Deli Mustard",
         ],
-        Image: null,
+        Image: "Pastrami_On_Rye.png",
     },
     {
         Name: "TurkeyReuben",
@@ -145,7 +141,7 @@ const FoodItems = [
             "House Slaw", 
             "House Dressing",
         ],
-        Image: null,
+        Image: "Turkey_Reuben.png",
     },
     {
         Name: "Reuben",
@@ -160,14 +156,14 @@ const FoodItems = [
             "Swiss", 
             "House Dressing",
         ],
-        Image: null,
+        Image: "Reuben.png",
     },
     {
         Name: "SecretGarden",
         Title: 'Secret Garden',
         DisplayName: 'Secret Garden&nbsp;<i class="fas fa-leaf text-success"></i>',
         ItemType: "Sub-Sandwhich",
-        Description: null,
+        Description: "Vegan friendly option",
         Price: '<label>12" (Whole) - $9.95</label><label>6" (Half) - $5.95</label>',
         Ingredients: [
             "Vegan Meat", 
@@ -200,7 +196,7 @@ const FoodItems = [
             "House Dressing", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "Italian.png",
     },
     {
         Name: "HarmonieClub",
@@ -220,7 +216,7 @@ const FoodItems = [
             "Deli Mustard", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "Harmonie_Club.png",
     },
     {
         Name: "BBQSteakHouse",
@@ -278,7 +274,7 @@ const FoodItems = [
             "Sriracha", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "Sriracha_Turkey.png",
     },
     {
         Name: "TranquilTurkey",
@@ -297,7 +293,7 @@ const FoodItems = [
             "Garlic Butter", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "Tranquil_Turkey.png",
     },
     {
         Name: "ClubHouse",
@@ -316,13 +312,13 @@ const FoodItems = [
             "Deli Mustard", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "Clubhouse.png",
     },
     {
         Name: "ZenCombo",
         Title: "Zen Combination",
         DisplayName: "Zen Combination",
-        ItemType: "Vietnamese (Banh Mi) Sandwiches",
+        ItemType: 'Vietnamese "Banh Mi" Sandwich',
         Description: null,
         Price: "$6.95",
         Ingredients: [
@@ -336,14 +332,14 @@ const FoodItems = [
             "House Mayonnaise", 
             "Zen Sauce", 
         ],
-        Image: null,
+        Image: "Zen_Combo.png",
     },
     {
         Name: "TofuDelight",
         Title: 'Tofu Delight',
         DisplayName: 'Tofu Delight&nbsp;<i class="fas fa-leaf text-success"></i>',
-        ItemType: "Vietnamese (Banh Mi) Sandwiches",
-        Description: null,
+        ItemType: 'Vietnamese "Banh Mi" Sandwich',
+        Description: "Vegan friendly option",
         Price: "$6.95",
         Ingredients: [
             "Vegan Pate", 
@@ -361,7 +357,7 @@ const FoodItems = [
         Name: "PorkRoll&Pate",
         Title: "Pork Roll & Pate",
         DisplayName: "Pork Roll & Pate",
-        ItemType: "Vietnamese (Banh Mi) Sandwiches",
+        ItemType: 'Vietnamese "Banh Mi" Sandwich',
         Description: null,
         Price: "$6.95",
         Ingredients: [
@@ -380,8 +376,8 @@ const FoodItems = [
         Name: "ZenVeggie",
         Title: "Zen Veggie",
         DisplayName: 'Zen Veggie&nbsp;<i class="fas fa-leaf text-success"></i>',
-        ItemType: "Vietnamese (Banh Mi) Sandwiches",
-        Description: null,
+        ItemType: 'Vietnamese "Banh Mi" Sandwich',
+        Description: "Vegan friendly option",
         Price: "$6.95",
         Ingredients: [
             "Vegan Pate", 
@@ -415,7 +411,7 @@ const DrinkItems = [
             "Winter Melon",
             "Hibiscus",
         ],
-        Image: "FruitDrink.jpg",
+        Image: "Tri_Color_Strawberry_Kiwi.png",
     },
     {
         Name: "FruitTeas",
@@ -452,7 +448,7 @@ const DrinkItems = [
             "Taro",
             "Honeydew"
         ],
-        Image: null,
+        Image: "Smoothie_Triple_Berry.png",
     },
     {
         Name: "MilkTeas",
@@ -468,7 +464,7 @@ const DrinkItems = [
             "Winter Melon Milk Tea",
             "Watermelon Milk Tea",
         ],
-        Image: "WinterWaterMilk.JPG",
+        Image: "MilkTea_Wintermelon.png",
     },
 ];
 

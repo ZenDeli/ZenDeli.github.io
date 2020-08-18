@@ -16,6 +16,7 @@ const showFoodModal = (item) => {
     let modalType = document.getElementById("food-modal-item-type");
     let modalPrice = document.getElementById("food-modal-price");
     let modalIngredients = document.getElementById("food-modal-ingredients");
+    let modalDescription = document.getElementById("food-modal-description");
 
     // If Item Has Image, (TODO: To Be reworked once all items have images)
     if (fooditem.Image) {
@@ -57,7 +58,8 @@ const showFoodModal = (item) => {
     modalTitle.innerHTML = `${fooditem.Title} Details`;
     bodyTitle.innerHTML = fooditem.DisplayName;
     modalType.innerHTML = fooditem.ItemType;
-    modalPrice.innerHTML = fooditem.Price
+    modalPrice.innerHTML = fooditem.Price;
+    modalDescription.innerHTML = fooditem.Description ? `(${fooditem.Description})` : null;
 
     if (fooditem.Ingredients.length)
         modalIngredients.innerHTML = fooditem.Ingredients.join(", ");
