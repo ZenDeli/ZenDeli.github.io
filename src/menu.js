@@ -1,11 +1,10 @@
 const showFoodModal = (item) => {    
     // Find Item in Array
-    let fooditem = FoodItems.find(obj => obj.Name == item);
-    if (!fooditem) {
+    let foodItem = FoodItems.find(obj => obj.Name == item);
+    if (!foodItem) {
         console.error("No Such Item");
         return;
     }
-    console.log(fooditem)
 
     // Declaring Element Variables
     let modalSize = document.getElementById("food-modal-dialog");
@@ -16,9 +15,10 @@ const showFoodModal = (item) => {
     let modalType = document.getElementById("food-modal-item-type");
     let modalPrice = document.getElementById("food-modal-price");
     let modalIngredients = document.getElementById("food-modal-ingredients");
+    let modalDescription = document.getElementById("food-modal-description");
 
     // If Item Has Image, (TODO: To Be reworked once all items have images)
-    if (fooditem.Image) {
+    if (foodItem.Image) {
         if (!modalContentDialog.classList.contains("col-lg-6")) {
             modalContentDialog.classList.add("col-lg-6");
         }
@@ -28,14 +28,16 @@ const showFoodModal = (item) => {
         }
 
         if (foodImage) {
-            foodImage.setAttribute("src", `assets/food/${fooditem.Image}`);
-            foodImage.setAttribute("atl", fooditem.DisplayName);
+            foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
+            foodImage.setAttribute("atl", foodItem.DisplayName);
+            foodImage.setAttribute("title", foodItem.ImageName);
         } else {
             foodImage = document.createElement("IMG");
             foodImage.setAttribute("id", "food-modal-image");
             foodImage.setAttribute("class", "col-12 col-lg-6 my-2");
-            foodImage.setAttribute("src", `assets/food/${fooditem.Image}`);
-            foodImage.setAttribute("atl", fooditem.DisplayName);
+            foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
+            foodImage.setAttribute("atl", foodItem.DisplayName);
+            foodImage.setAttribute("title", foodItem.ImageName);
             document.getElementById("food-modal-body-content").prepend(foodImage);
         }
     }
@@ -54,13 +56,14 @@ const showFoodModal = (item) => {
     }
 
     // Add Item Details
-    modalTitle.innerHTML = `${fooditem.Title} Details`;
-    bodyTitle.innerHTML = fooditem.DisplayName;
-    modalType.innerHTML = fooditem.ItemType;
-    modalPrice.innerHTML = fooditem.Price
+    modalTitle.innerHTML = `${foodItem.Title} Details`;
+    bodyTitle.innerHTML = foodItem.DisplayName;
+    modalType.innerHTML = foodItem.ItemType;
+    modalPrice.innerHTML = foodItem.Price;
+    modalDescription.innerHTML = foodItem.Description ? `(${foodItem.Description})` : null;
 
-    if (fooditem.Ingredients.length)
-        modalIngredients.innerHTML = fooditem.Ingredients.join(", ");
+    if (foodItem.Ingredients.length)
+        modalIngredients.innerHTML = foodItem.Ingredients.join(", ");
     else {
         modalIngredients.innerHTML = "";
     }
@@ -75,7 +78,6 @@ const showDrinksModal = (item) => {
        console.error("No Such Item");
        return;
    }
-   console.log(drinkItem)
 
    // Declaring Element Variables
    let modalSize = document.getElementById("drinks-modal-dialog");
@@ -99,12 +101,14 @@ const showDrinksModal = (item) => {
        if (foodImage) {
            foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
            foodImage.setAttribute("atl", drinkItem.DisplayName);
+           foodImage.setAttribute("title", drinkItem.ImageName);
        } else {
            foodImage = document.createElement("IMG");
            foodImage.setAttribute("id", "drinks-modal-image");
-           foodImage.setAttribute("class", "col-12 col-lg-6 my-2 h-100");
+           foodImage.setAttribute("class", "col-12 col-lg-6 my-2");
            foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
            foodImage.setAttribute("atl", drinkItem.DisplayName);
+           foodImage.setAttribute("title", drinkItem.ImageName);
            document.getElementById("drinks-modal-body-content").prepend(foodImage);
        }
    }
