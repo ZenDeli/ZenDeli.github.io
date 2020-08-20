@@ -14,7 +14,7 @@ const FoodItems = [
             "Glass Noodles",
             "Onions",
         ],
-        Image: "Egg_Rolls.png",
+        Image: "Egg_Rolls.jpg",
         ImageName: "Vietnamese Egg Rolls",
     },
     {
@@ -31,7 +31,7 @@ const FoodItems = [
             "Glass Noodles",
             "Onions",
         ],
-        Image: "Veggie_Rolls.png",
+        Image: "Veggie_Rolls.jpg",
         ImageName: 'Veggie Rolls',
     },
     {
@@ -46,7 +46,7 @@ const FoodItems = [
             "Shrimp",
             "Shredded Taro",
         ],
-        Image: "Eggroll_Nuggets.png",
+        Image: "Eggroll_Nuggets.jpg",
         ImageName: "Egg Roll Nuggets",
     },
     {
@@ -59,7 +59,7 @@ const FoodItems = [
         Ingredients: [
             "Shrimp wrapped in Spring Roll Wrapper",
         ],
-        Image: "Shrimp_Roll.png",
+        Image: "Shrimp_Roll.jpg",
         ImageName: "Shrimp Rolls",
     },
     {
@@ -75,7 +75,7 @@ const FoodItems = [
             "Scallions",
             "Wonton Wrapper"
         ],
-        Image: "Crab_Rangoon.png",
+        Image: "Crab_Rangoon.jpg",
         ImageName: "Crab Rangoons",
     },
     {
@@ -96,7 +96,7 @@ const FoodItems = [
             "Italian Dressing", 
             "House Dressing",
         ],
-        Image: "Zen_Special.png",
+        Image: "Zen_Special.jpg",
         ImageName: "Zen Special",
     },
     {
@@ -114,7 +114,7 @@ const FoodItems = [
             "House Dressing",
             "Deli Mustard",
         ],
-        Image: "New_Yorker.png",
+        Image: "New_Yorker.jpg",
         ImageName: "New Yorker",
     },
     {
@@ -132,7 +132,7 @@ const FoodItems = [
             "House Dressing",
             "Deli Mustard",
         ],
-        Image: "Pastrami_On_Rye.png",
+        Image: "Pastrami_On_Rye.jpg",
         ImageName: "Pastrami On Rye",
     },
     {
@@ -149,7 +149,7 @@ const FoodItems = [
             "House Slaw", 
             "House Dressing",
         ],
-        Image: "Turkey_Reuben.png",
+        Image: "Turkey_Reuben.jpg",
         ImageName: "Turkey Reuben",
     },
     {
@@ -165,7 +165,7 @@ const FoodItems = [
             "Swiss", 
             "House Dressing",
         ],
-        Image: "Reuben.png",
+        Image: "Reuben.jpg",
         ImageName: "Reuben",
     },
     {
@@ -207,7 +207,7 @@ const FoodItems = [
             "House Dressing", 
             "Organic Spring Mix", 
         ],
-        Image: "Italian.png",
+        Image: "Italian.jpg",
         ImageName: "The Italian",
     },
     {
@@ -228,7 +228,7 @@ const FoodItems = [
             "Deli Mustard", 
             "Organic Spring Mix", 
         ],
-        Image: "Harmonie_Club.png",
+        Image: "Harmonie_Club.jpg",
         ImageName: "Harmonie Club",
     },
     {
@@ -248,7 +248,7 @@ const FoodItems = [
             "House BBQ Sauce", 
             "Organic Spring Mix", 
         ],
-        Image: "BBQ_Steakhouse.png",
+        Image: "BBQ_Steakhouse.jpg",
         ImageName: "BBQ Steak House",
     },
     {
@@ -289,7 +289,7 @@ const FoodItems = [
             "Sriracha", 
             "Organic Spring Mix", 
         ],
-        Image: "Sriracha_Turkey.png",
+        Image: "Sriracha_Turkey.jpg",
         ImageName: "Sriracha Turkey",
     },
     {
@@ -309,7 +309,7 @@ const FoodItems = [
             "Garlic Butter", 
             "Organic Spring Mix", 
         ],
-        Image: "Tranquil_Turkey.png",
+        Image: "Tranquil_Turkey.jpg",
         ImageName: "Tranquil Turkey",
     },
     {
@@ -329,7 +329,7 @@ const FoodItems = [
             "Deli Mustard", 
             "Organic Spring Mix", 
         ],
-        Image: "Clubhouse.png",
+        Image: "Clubhouse.jpg",
         ImageName: "Club House",
     },
     {
@@ -350,7 +350,7 @@ const FoodItems = [
             "House Mayonnaise", 
             "Zen Sauce", 
         ],
-        Image: "Zen_Combo.png",
+        Image: "Zen_Combo.jpg",
         ImageName: "Zen Combination",
     },
     {
@@ -436,7 +436,7 @@ const DrinkItems = [
             "Winter Melon",
             "Hibiscus",
         ],
-        Image: "Fruit_Drink.png",
+        Image: "Fruit_Drink.jpg",
         ImageName: "Peach Fruit Drink with Orange Popping Pearls",
     },
     {
@@ -459,7 +459,7 @@ const DrinkItems = [
             "Watermelon",
             "Winter Melon",
         ],
-        Image: "Fruit_Tea.png",
+        Image: "Fruit_Tea.jpg",
         ImageName: "Tri-Color Kiwi with Strawberry Popping Pearls",
     },
     {
@@ -482,7 +482,7 @@ const DrinkItems = [
             "Taro",
             "Honeydew"
         ],
-        Image: "Smoothie.png",
+        Image: "Smoothie.jpg",
         ImageName: "Strawberry Smoothie with Whipped Cream",
     },
     {
@@ -500,7 +500,7 @@ const DrinkItems = [
             "Winter Melon Milk Tea",
             "Watermelon Milk Tea",
         ],
-        Image: "Milk_Tea.png",
+        Image: "Milk_Tea.jpg",
         ImageName: "Iced Coffee Milk Tea",
     },
 ];
