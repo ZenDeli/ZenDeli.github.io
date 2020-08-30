@@ -186,7 +186,7 @@ const FoodItems = [
             "Italian Dressing", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "Secret_Garden.jpg",
         ImageName: 'Secret Garden',
     },
     {
