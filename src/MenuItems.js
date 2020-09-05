@@ -7,8 +7,7 @@ const FoodItems = [
         Description: null,
         Price: "5 pieces for $5.95",
         Ingredients: [
-            "Pork",
-            "Chicken",
+            "Pork or Chicken",
             "Cabbage",
             "Carrots",
             "Glass Noodles",
