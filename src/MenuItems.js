@@ -267,7 +267,7 @@ const FoodItems = [
             "Garlic Butter", 
             "Organic Spring Mix", 
         ],
-        Image: null,
+        Image: "All_American.jpg",
         ImageName: "All American",
     },
     {
@@ -369,7 +369,7 @@ const FoodItems = [
             "Cilantro", 
             "House Vegetarian Sauces", 
         ],
-        Image: null,
+        Image: "BanhMiNoImage.jpg",
         ImageName: 'Tofu Delight',
     },
     {
@@ -389,7 +389,7 @@ const FoodItems = [
             "House Mayonnaise",
             "Zen Sauce",
         ],
-        Image: null,
+        Image: "BanhMiNoImage.jpg",
         ImageName: "Pork Roll & Pate",
     },
     {
@@ -408,7 +408,7 @@ const FoodItems = [
             "Cilantro",
             "House Vegetarian Sauces",
         ],
-        Image: null,
+        Image: "BanhMiNoImage.jpg",
         ImageName: "Zen Veggie",
     },
 ];
@@ -511,5 +511,6 @@ const DrinkAddOns = [
     "Strawberry Bursting Pearl",
     "Orange Bursting Pearl",
     "Mango Bursting Pearl",
+    "Passion Fruit Bursting Pearl",
     "Sea Salt Cream",
 ]
