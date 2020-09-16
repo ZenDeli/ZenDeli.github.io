@@ -7,55 +7,17 @@ const showFoodModal = (item) => {
     }
 
     // Declaring Element Variables
-    let modalSize = document.getElementById("food-modal-dialog");
     let foodImage = document.getElementById('food-modal-image');
-    let modalContentDialog = document.getElementById("food-modal-body-content-dialog");
     let modalTitle = document.getElementById("food-modal-title");
     let bodyTitle = document.getElementById("food-modal-body-title");
     let modalType = document.getElementById("food-modal-item-type");
     let modalPrice = document.getElementById("food-modal-price");
-    let modalIngredients = document.getElementById("food-modal-ingredients");
     let modalDescription = document.getElementById("food-modal-description");
+    let modalIngredients = document.getElementById("food-modal-ingredients");
 
-    // If Item Has Image, (TODO: To Be reworked once all items have images)
-    if (foodItem.Image) {
-        if (!modalContentDialog.classList.contains("col-lg-6")) {
-            modalContentDialog.classList.add("col-lg-6");
-        }
-
-        if (!modalSize.classList.contains("modal-lg")) {
-            modalSize.classList.add("modal-lg")
-        }
-
-        if (foodImage) {
-            foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
-            foodImage.setAttribute("atl", foodItem.DisplayName);
-            foodImage.setAttribute("title", foodItem.ImageName);
-            foodImage.setAttribute("width", "100");
-        } else {
-            foodImage = document.createElement("IMG");
-            foodImage.setAttribute("id", "food-modal-image");
-            foodImage.setAttribute("class", "col-12 col-lg-6 my-2");
-            foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
-            foodImage.setAttribute("atl", foodItem.DisplayName);
-            foodImage.setAttribute("title", foodItem.ImageName);
-            foodImage.setAttribute("width", "100");
-            document.getElementById("food-modal-body-content").prepend(foodImage);
-        }
-    }
-    else {
-        if (modalContentDialog.classList.contains("col-lg-6")) {
-            modalContentDialog.classList.remove("col-lg-6");
-        }
-        
-        if (modalSize.classList.contains("modal-lg")) {
-            modalSize.classList.remove("modal-lg")
-        }
-
-        if (foodImage) {
-            foodImage.parentNode.removeChild(foodImage)
-        }
-    }
+    foodImage.setAttribute("src", `assets/food/${foodItem.Image}`);
+    foodImage.setAttribute("atl", foodItem.DisplayName);
+    foodImage.setAttribute("title", foodItem.ImageName);
 
     // Add Item Details
     modalTitle.innerHTML = `${foodItem.Title} Details`;
@@ -70,7 +32,7 @@ const showFoodModal = (item) => {
         modalIngredients.innerHTML = "";
     }
 
-    $('#food-detail-modal').modal("show");
+    setTimeout( _ => {$('#food-detail-modal').modal("show")}, 100 )
 }
 
 const showDrinksModal = (item) => {
