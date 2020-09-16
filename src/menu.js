@@ -32,7 +32,7 @@ const showFoodModal = (item) => {
         modalIngredients.innerHTML = "";
     }
 
-    setTimeout( _ => {$('#food-detail-modal').modal("show")}, 100 )
+    setTimeout( _ => {$('#food-detail-modal').modal("show")}, 100 );
 }
 
 const showDrinksModal = (item) => {
@@ -44,53 +44,16 @@ const showDrinksModal = (item) => {
    }
 
    // Declaring Element Variables
-   let modalSize = document.getElementById("drinks-modal-dialog");
    let foodImage = document.getElementById('drinks-modal-image');
-   let modalContentDialog = document.getElementById("drinks-modal-body-content-dialog");
    let modalTitle = document.getElementById("drinks-modal-title");
    let bodyTitle = document.getElementById("drinks-modal-body-title");
    let modalPrice = document.getElementById("drinks-modal-price");
    let modalFlavors = document.getElementById("drinks-modal-flavors");
    let modalDescription = document.getElementById("drinks-modal-description");
-   // If Item Has Image, (TODO: To Be reworked once all items have images)
-   if (drinkItem.Image) {
-       if (!modalContentDialog.classList.contains("col-lg-6")) {
-           modalContentDialog.classList.add("col-lg-6");
-       }
-
-       if (!modalSize.classList.contains("modal-lg")) {
-           modalSize.classList.add("modal-lg")
-       }
-
-       if (foodImage) {
-           foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
-           foodImage.setAttribute("atl", drinkItem.DisplayName);
-           foodImage.setAttribute("title", drinkItem.ImageName);
-           foodImage.setAttribute("width", "100");
-       } else {
-           foodImage = document.createElement("IMG");
-           foodImage.setAttribute("id", "drinks-modal-image");
-           foodImage.setAttribute("class", "col-12 col-lg-6 my-2");
-           foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
-           foodImage.setAttribute("atl", drinkItem.DisplayName);
-           foodImage.setAttribute("title", drinkItem.ImageName);
-           foodImage.setAttribute("width", "100");
-           document.getElementById("drinks-modal-body-content").prepend(foodImage);
-       }
-   }
-   else {
-       if (modalContentDialog.classList.contains("col-lg-6")) {
-           modalContentDialog.classList.remove("col-lg-6");
-       }
-       
-       if (modalSize.classList.contains("modal-lg")) {
-           modalSize.classList.remove("modal-lg")
-       }
-
-       if (foodImage) {
-           foodImage.parentNode.removeChild(foodImage)
-       }
-   }
+   
+   foodImage.setAttribute("src", `assets/food/${drinkItem.Image}`);
+   foodImage.setAttribute("atl", drinkItem.DisplayName);
+   foodImage.setAttribute("title", drinkItem.ImageName);
 
    // Add Item Details
    modalTitle.innerHTML = `${drinkItem.DisplayName} Details`;
@@ -109,7 +72,7 @@ const showDrinksModal = (item) => {
             modalFlavors.appendChild(node);
         })
 
-    $('#drinks-detail-modal').modal("show");
+        setTimeout( _ => {$('#drinks-detail-modal').modal("show")}, 100 );
 }
 
 const getItem = (item, name) => {
