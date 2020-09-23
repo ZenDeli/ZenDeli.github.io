@@ -434,6 +434,7 @@ const DrinkItems = [
             "Strawberry",
             "Watermelon",
             "Winter Melon",
+            "Guava",
             "Hibiscus",
         ],
         Image: "Fruit_Drink.jpg",
@@ -458,6 +459,7 @@ const DrinkItems = [
             "Strawberry",
             "Watermelon",
             "Winter Melon",
+            "Guava"
         ],
         Image: "Fruit_Tea.jpg",
         ImageName: "Tri-Color Kiwi with Strawberry Popping Pearls",
@@ -480,7 +482,13 @@ const DrinkItems = [
             "Strawberry & Banana",
             "Thai Tea",
             "Taro",
-            "Honeydew"
+            "Honeydew",
+            "Watermeelon",
+            "Pineapple",
+            "Pink Lemon",
+            "Banana",
+            "Matcha",
+            "Lemon"
         ],
         Image: "Smoothie.jpg",
         ImageName: "Strawberry Smoothie with Whipped Cream",
