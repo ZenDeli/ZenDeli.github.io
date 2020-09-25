@@ -27,7 +27,7 @@ CreateHeader = () => {
         `<header class="sticky-top">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
                 <a class="navbar-brand ml-1" href="index.html">
-                    <img src="assets/ZenDeli.png" width="96px">
+                    <img src="assets/ZenDeli.svg" width="96px">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
