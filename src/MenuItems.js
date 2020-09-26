@@ -408,7 +408,7 @@ const FoodItems = [
             "Cilantro",
             "House Vegetarian Sauces",
         ],
-        Image: "BanhMiNoImage.jpg",
+        Image: "Zen_Veggie.jpg",
         ImageName: "Zen Veggie",
     },
 ];
