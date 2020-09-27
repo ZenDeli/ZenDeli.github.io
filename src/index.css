@@ -14,6 +14,10 @@
     height: var(--view-height);
 }
 
+.section_two {
+    min-height: 400px;
+}
+
 .jumbotron-title {
     background: rgba(212, 212, 212, 0.466);
 }
