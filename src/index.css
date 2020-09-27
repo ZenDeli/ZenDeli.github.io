@@ -1,19 +1,23 @@
-.main-body {
-    background: rgb(245, 255, 245);
+:root {
+    --view-height: calc(100vh - 95px);
 }
 
 .body-title {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.jumbotron {
+.section_one {
     background-image: url("/assets/Jumbotron.jpeg");
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
-    height: calc(100vh - 95px);
+    height: var(--view-height);
 }
 
 .jumbotron-title {
     background: rgba(212, 212, 212, 0.466);
+}
+
+.section_two {
+    background: rgb(238, 228, 228);
 }
