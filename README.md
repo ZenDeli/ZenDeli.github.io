@@ -1,2 +1,2 @@
 # ZenDeli.github.io
-http://www.ZenDelicatessen.com
+https://zendelicatessen.com/
