@@ -108,7 +108,7 @@ CreateFooter = () => {
                         </div>
                         <div class="row">
                             <span class="col col-4 text-left">Friday</span>
-                            <span class="col col-8 text-right">9 AM - 3 PM</span>
+                            <span class="col col-8 text-right">9 AM - 5 PM</span>
                         </div>
                         <div class="row">
                             <span class="col col-4 text-left">Saturday</span>
