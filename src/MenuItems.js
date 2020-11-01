@@ -21,7 +21,7 @@ const FoodItems = [
         Title: 'Veggie Rolls',
         DisplayName: 'Veggie Rolls&nbsp;<i class="fas fa-leaf text-success"></i>',
         ItemType: "Appetizer",
-        Description: "Vegan friendly option",
+        Description: "Vegetarian friendly option",
         Price: "5 pieces for $5.95",
         Ingredients: [
             "Tofu",
@@ -172,7 +172,7 @@ const FoodItems = [
         Title: 'Secret Garden',
         DisplayName: 'Secret Garden&nbsp;<i class="fas fa-leaf text-success"></i>',
         ItemType: "Sub-Sandwhich",
-        Description: "Vegan friendly option",
+        Description: "Vegetarian friendly option",
         Price: '<label>12" (Whole) - $9.95</label><label>6" (Half) - $5.95</label>',
         Ingredients: [
             "Vegan Meat", 
@@ -357,7 +357,7 @@ const FoodItems = [
         Title: 'Tofu Delight',
         DisplayName: 'Tofu Delight&nbsp;<i class="fas fa-leaf text-success"></i>',
         ItemType: 'Vietnamese "Banh Mi" Sandwich',
-        Description: "Vegan friendly option",
+        Description: "Vegetarian friendly option",
         Price: "$6.95",
         Ingredients: [
             "Vegan Pate", 
@@ -397,7 +397,7 @@ const FoodItems = [
         Title: "Zen Veggie",
         DisplayName: 'Zen Veggie&nbsp;<i class="fas fa-leaf text-success"></i>',
         ItemType: 'Vietnamese "Banh Mi" Sandwich',
-        Description: "Vegan friendly option",
+        Description: "Vegetarian friendly option",
         Price: "$6.95",
         Ingredients: [
             "Vegan Pate", 
