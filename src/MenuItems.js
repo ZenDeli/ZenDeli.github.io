@@ -280,7 +280,7 @@ const FoodItems = [
         Ingredients: [
             "Turkey", 
             "Cheddar", 
-            "Tomaro", 
+            "Tomato", 
             "Onions", 
             "Chilis", 
             "Sweet Chili Sauce", 
