@@ -142,7 +142,7 @@ CreateFooter = () => {
             </div>
             <div class="d-flex justify-content-center py-4">
                 <span class="text-center d-flex flex-column flex-md-row">
-                    <span class="px-1">&copy; Copyright 2020 ZEN Delicatessen, LLC.</span>
+                    <span class="px-1">&copy; Copyright 2021 ZEN Delicatessen, LLC.</span>
                     <span class="px-1">All rights reserved.</span>
                 </span>
             </div>
