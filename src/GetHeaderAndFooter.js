@@ -73,9 +73,8 @@ CreateFooter = () => {
                         </h5>
                         <!-- Main Campus -->
                         <div class="font-weight-bold text-warning ">ZEN Delicatessen</div>
-                        <div class="mt-2">Main Location</div>
-                        <div>15880 San Carlos Blvd</div>
-                        <div>Suite #135</div>
+                        <div class="mt-2 font-weight-bold">Main Location</div>
+                        <div>15880 San Carlos Blvd. #135</div>
                         <div>Fort Myers, FL 33908</div>
                         <div class="mt-2">
                             <a class="text-warning" href="tel:239-362-3049">
@@ -84,8 +83,7 @@ CreateFooter = () => {
                         </div>
 
                         <!-- Flea Market Stall -->
-                        <!-- <div class="font-weight-bold text-warning">ZEN Delicatessen</div> -->
-                        <div class="mt-4">Fleamasters Flea Market</div>
+                        <div class="mt-4 font-weight-bold">Fleamasters Flea Market</div>
                         <div>4135 Dr. Martin Luther King Jr. Blvd.</div>
                         <div>Fort Myers, FL 33916</div>
                         <div class="mt-2">
@@ -93,7 +91,6 @@ CreateFooter = () => {
                                 <i class="fas fa-phone-alt mr-2"></i>(239) 313 - 5272
                             </a> 
                         </div>
-
                     </div>
                 </div>
                 
@@ -164,3 +161,27 @@ CreateFooter = () => {
 
 CreateHeader();
 CreateFooter();
+
+/* Header Phone Number
+                        <span class="navbar-text container d-flex flex-column mx-2">
+                            <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
+                            <div class="row justify-content-center">
+                                <a href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                </a>
+                            </div>                            
+                        </span>
+*/
+
+
+/* Footer Location
+                        <!-- Cape Coral Campus -->
+                        <!-- <div class="mt-4 font-weight-bold">Cape Coral Location</div>
+                        <div>41847 NE Pine Island Rd. #650</div>
+                        <div>Cape Coral, FL 33909</div>
+                        <div class="mt-2">
+                            <a class="text-warning" href="tel:239-313-5272">
+                                <i class="fas fa-phone-alt mr-2"></i>(239) 313 - 5272
+                            </a> 
+                        </div> -->
+*/
