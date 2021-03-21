@@ -39,11 +39,22 @@ CreateHeader = () => {
                         <a class="nav-item nav-link${isOnLocationPage ? active : ""}" href="locations.html">Locations</a>
                         <!-- <a class="nav-item nav-link disabled${isOnAboutPage ? active : ""}" href="aboutus.html">About us</a> -->
                     </div>
-                    <div class="navbar-nav navbar-right">
-                        <span class="navbar-text">Flea Market Stand:&nbsp;
-                            <a href="tel:239-313-5272">
-                                <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
-                            </a>
+                    <div class="navbar-nav navbar-right d-flex flex-row">
+                        <span class="navbar-text container d-flex flex-column mx-2">
+                            <label class="row justify-content-center phone-label">South Fort Myers Location:</label>
+                            <div class="row justify-content-center">
+                                <a href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                </a>
+                            </div>                            
+                        </span>
+                        <span class="navbar-text container d-flex flex-column mx-2">
+                            <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
+                            <div class="row justify-content-center">
+                                <a href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                </a>
+                            </div>                            
                         </span>
                     </div>
                 </div>
@@ -61,26 +72,27 @@ CreateFooter = () => {
                             <i class="far fa-compass"></i>&nbsp;VISIT US
                         </h5>
                         <!-- Main Campus -->
-                        <!-- <div class="display-5"><h5>ZEN Delicatessen</h5></div>
+                        <div class="font-weight-bold text-warning ">ZEN Delicatessen</div>
+                        <div class="mt-2">Main Location</div>
                         <div>15880 San Carlos Blvd</div>
                         <div>Suite #135</div>
                         <div>Fort Myers, FL 33908</div>
                         <div class="mt-2">
-                            <a class="text-light" href="tel:239-362-3049">
-                                (239) 362 - 3049
+                            <a class="text-warning" href="tel:239-362-3049">
+                                <i class="fas fa-phone-alt mr-2"></i>(239) 362 - 3049
                             </a> 
-                        </div> -->
+                        </div>
 
                         <!-- Flea Market Stall -->
-                        <div class="font-weight-bold text-warning">ZEN Delicatessen</div>
-                        <div>Fleamasters Flea Market</div>
+                        <!-- <div class="font-weight-bold text-warning">ZEN Delicatessen</div> -->
+                        <div class="mt-4">Fleamasters Flea Market</div>
                         <div>4135 Dr. Martin Luther King Jr. Blvd.</div>
                         <div>Fort Myers, FL 33916</div>
                         <div class="mt-2">
-                            <a class="text-light" href="tel:239-313-5272">
-                                <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
+                            <a class="text-warning" href="tel:239-313-5272">
+                                <i class="fas fa-phone-alt mr-2"></i>(239) 313 - 5272
                             </a> 
-                        </div> 
+                        </div>
 
                     </div>
                 </div>
@@ -90,6 +102,7 @@ CreateFooter = () => {
                         <h5 class="text-warning mb-3">
                             <i class="far fa-clock"></i>&nbsp;HOURS
                         </h5>
+                        <div class="mt-4 text-secondary">Fleamasters Flea Market</div>
                         <div class="row">
                             <span class="col col-4 text-left">Monday</span>
                             <span class="col col-8 text-right">Closed</span>
