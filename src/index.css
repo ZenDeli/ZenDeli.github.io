@@ -15,11 +15,19 @@
 }
 
 .section_two {
-    min-height: 400px;
+    background-image: url("/assets/StoreFront.png");
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    height: var(--view-height);
 }
 
 .jumbotron-title {
     background: rgba(212, 212, 212, 0.466);
+}
+
+.body-title {
+    background: rgba(68, 68, 68, 0.8);
 }
 
 .section_three {
