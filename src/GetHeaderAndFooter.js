@@ -2,6 +2,8 @@ CreateHeader = () => {
     var isOnHomePage, isOnMenuPage, isOnLocationPage, isOnAboutPage = false;
     var active = " active text-primary";
 
+    const currentDayOfWeek = new Date().getDay();
+
     switch (location.pathname) {
         case "/":
         case "/index.html":
@@ -23,6 +25,37 @@ CreateHeader = () => {
             break;
     }
 
+    const hoursOfOperations = {
+        '0': {
+            'main': '11 AM - 5 PM',
+            'market': '9 AM - 5 PM',
+        },
+        '1': {
+            'main': '11 AM - 8 PM',
+            'market': 'Closed',
+        },
+        '2': {
+            'main': '11 AM - 8 PM',
+            'market': 'Closed',
+        },
+        '3': {
+            'main': '11 AM - 8 PM',
+            'market': 'Closed',
+        },
+        '4': {
+            'main': '11 AM - 8 PM',
+            'market': 'Closed',
+        },
+        '5': {
+            'main': '11 AM - 8 PM',
+            'market': '9 AM - 5 PM',
+        },
+        '6': {
+            'main': '11 AM - 8 PM',
+            'market': '9 AM - 5 PM',
+        },
+    }
+
     document.body.innerHTML =
         `<header class="sticky-top">
             <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -39,11 +72,25 @@ CreateHeader = () => {
                         <a class="nav-item nav-link${isOnLocationPage ? active : ""}" href="locations.html">Locations</a>
                         <!-- <a class="nav-item nav-link disabled${isOnAboutPage ? active : ""}" href="aboutus.html">About us</a> -->
                     </div>
-                    <div class="navbar-nav navbar-right">
-                        <span class="navbar-text">Flea Market Stand:&nbsp;
-                            <a href="tel:239-313-5272">
-                                <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
-                            </a>
+                    <div class="navbar-nav navbar-right d-flex flex-row">
+                        <span class="navbar-text container d-flex flex-column mx-2">
+                            <label class="row justify-content-center phone-label">South Fort Myers Location:</label>
+                            <div class="row justify-content-center">
+                                <a href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                </a>
+                            </div>
+                            <!-- <label class="row justify-content-center">Open ${hoursOfOperations[currentDayOfWeek].main}</label> -->
+                            <label class="row justify-content-center">Not Open Yet</label>
+                        </span>
+                        <span class="navbar-text container d-flex flex-column mx-2">
+                            <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
+                            <div class="row justify-content-center">
+                                <a href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                </a>
+                            </div> 
+                            <label class="row justify-content-center">Open ${hoursOfOperations[currentDayOfWeek].market}</label>                             
                         </span>
                     </div>
                 </div>
@@ -56,32 +103,33 @@ CreateFooter = () => {
         `<footer class="footer">
             <div class="row bg-secondary m-0 p-4 text-light">
                 <div class="col col-12 col-lg-4 py-3 d-flex justify-content-center">
-                    <div class="text-center">
+                    <div class="text-center col justify-content-between">
                         <h5 class="text-warning mb-3">
                             <i class="far fa-compass"></i>&nbsp;VISIT US
                         </h5>
-                        <!-- Main Campus -->
-                        <!-- <div class="display-5"><h5>ZEN Delicatessen</h5></div>
-                        <div>15880 San Carlos Blvd</div>
-                        <div>Suite #135</div>
-                        <div>Fort Myers, FL 33908</div>
-                        <div class="mt-2">
-                            <a class="text-light" href="tel:239-362-3049">
-                                (239) 362 - 3049
-                            </a> 
-                        </div> -->
-
-                        <!-- Flea Market Stall -->
-                        <div class="font-weight-bold text-warning">ZEN Delicatessen</div>
-                        <div>Fleamasters Flea Market</div>
-                        <div>4135 Dr. Martin Luther King Jr. Blvd.</div>
-                        <div>Fort Myers, FL 33916</div>
-                        <div class="mt-2">
-                            <a class="text-light" href="tel:239-313-5272">
-                                <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
-                            </a> 
-                        </div> 
-
+                        <div>
+                            <!-- Main Campus -->
+                            <div class="font-weight-bold text-warning ">ZEN Delicatessen</div>
+                            <div class="mt-2 font-weight-bold">Main Location</div>
+                            <div>15880 San Carlos Blvd. #135</div>
+                            <div>Fort Myers, FL 33908</div>
+                            <div class="mt-2">
+                                <a class="text-warning" href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt mr-2"></i>(239) 362 - 3049
+                                </a> 
+                            </div>
+                        </div>
+                        <div>
+                            <!-- Flea Market Stall -->
+                            <div class="mt-4 font-weight-bold">Fleamasters Flea Market</div>
+                            <div>4135 Dr. Martin Luther King Jr. Blvd.</div>
+                            <div>Fort Myers, FL 33916</div>
+                            <div class="mt-2">
+                                <a class="text-warning" href="tel:239-313-5272">
+                                    <i class="fas fa-phone-alt mr-2"></i>(239) 313 - 5272
+                                </a> 
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -90,33 +138,67 @@ CreateFooter = () => {
                         <h5 class="text-warning mb-3">
                             <i class="far fa-clock"></i>&nbsp;HOURS
                         </h5>
-                        <div class="row">
-                            <span class="col col-4 text-left">Monday</span>
-                            <span class="col col-8 text-right">Closed</span>
+                        <div>
+                            <div class="mt-4 font-weight-bold">Main Location</div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Monday</span>
+                                <span class="col col-8 text-right">11 AM - 8 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Tuesday</span>
+                                <span class="col col-8 text-right">11 AM - 8 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Wednesday</span>
+                                <span class="col col-8 text-right">11 AM - 8 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Thursday</span>
+                                <span class="col col-8 text-right">11 AM - 8 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Friday</span>
+                                <span class="col col-8 text-right">11 AM - 8 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Saturday</span>
+                                <span class="col col-8 text-right">11 AM - 8 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Sunday</span>
+                                <span class="col col-8 text-right">11 AM - 5 PM</span>
+                            </div>
                         </div>
-                        <div class="row">
-                            <span class="col col-4 text-left">Tuesday</span>
-                            <span class="col col-8 text-right">Closed</span>
-                        </div>
-                        <div class="row">
-                            <span class="col col-4 text-left">Wednesday</span>
-                            <span class="col col-8 text-right">Closed</span>
-                        </div>
-                        <div class="row">
-                            <span class="col col-4 text-left">Thursday</span>
-                            <span class="col col-8 text-right">Closed</span>
-                        </div>
-                        <div class="row">
-                            <span class="col col-4 text-left">Friday</span>
-                            <span class="col col-8 text-right">9 AM - 5 PM</span>
-                        </div>
-                        <div class="row">
-                            <span class="col col-4 text-left">Saturday</span>
-                            <span class="col col-8 text-right">9 AM - 5 PM</span>
-                        </div>
-                        <div class="row">
-                            <span class="col col-4 text-left">Sunday</span>
-                            <span class="col col-8 text-right">9 AM - 5 PM</span>
+                        <div>
+                            <div class="mt-4 font-weight-bold">Fleamasters Flea Market</div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Monday</span>
+                                <span class="col col-8 text-right">Closed</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Tuesday</span>
+                                <span class="col col-8 text-right">Closed</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Wednesday</span>
+                                <span class="col col-8 text-right">Closed</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Thursday</span>
+                                <span class="col col-8 text-right">Closed</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Friday</span>
+                                <span class="col col-8 text-right">9 AM - 5 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Saturday</span>
+                                <span class="col col-8 text-right">9 AM - 5 PM</span>
+                            </div>
+                            <div class="row">
+                                <span class="col col-4 text-left">Sunday</span>
+                                <span class="col col-8 text-right">9 AM - 5 PM</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -151,3 +233,27 @@ CreateFooter = () => {
 
 CreateHeader();
 CreateFooter();
+
+/* Header Phone Number
+                        <span class="navbar-text container d-flex flex-column mx-2">
+                            <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
+                            <div class="row justify-content-center">
+                                <a href="tel:239-362-3049">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                </a>
+                            </div>                            
+                        </span>
+*/
+
+
+/* Footer Location
+                        <!-- Cape Coral Campus -->
+                        <!-- <div class="mt-4 font-weight-bold">Cape Coral Location</div>
+                        <div>41847 NE Pine Island Rd. #650</div>
+                        <div>Cape Coral, FL 33909</div>
+                        <div class="mt-2">
+                            <a class="text-warning" href="tel:239-313-5272">
+                                <i class="fas fa-phone-alt mr-2"></i>(239) 313 - 5272
+                            </a> 
+                        </div> -->
+*/
