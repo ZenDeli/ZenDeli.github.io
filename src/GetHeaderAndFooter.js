@@ -32,19 +32,19 @@ CreateHeader = () => {
         },
         '1': {
             'main': 'Open 11 AM - 8 PM',
-            'market': 'Closed',
+            'market': 'Closed Today',
         },
         '2': {
             'main': 'Open 11 AM - 8 PM',
-            'market': 'Closed',
+            'market': 'Closed Today',
         },
         '3': {
             'main': 'Open 11 AM - 8 PM',
-            'market': 'Closed',
+            'market': 'Closed Today',
         },
         '4': {
             'main': 'Open 11 AM - 8 PM',
-            'market': 'Closed',
+            'market': 'Closed Today',
         },
         '5': {
             'main': 'Open 11 AM - 8 PM',
@@ -81,7 +81,7 @@ CreateHeader = () => {
                                 </a>
                             </div>
                             <!-- <label class="row justify-content-center">${hoursOfOperations[currentDayOfWeek].main}</label> -->
-                            <label class="row justify-content-center">Closed</label>
+                            <label class="row justify-content-center">Closed Today</label>
                         </span>
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
