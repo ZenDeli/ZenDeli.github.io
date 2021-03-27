@@ -27,32 +27,32 @@ CreateHeader = () => {
 
     const hoursOfOperations = {
         '0': {
-            'main': '11 AM - 5 PM',
-            'market': '9 AM - 5 PM',
+            'main': 'Open 11 AM - 5 PM',
+            'market': 'Open 9 AM - 5 PM',
         },
         '1': {
-            'main': '11 AM - 8 PM',
+            'main': 'Open 11 AM - 8 PM',
             'market': 'Closed',
         },
         '2': {
-            'main': '11 AM - 8 PM',
+            'main': 'Open 11 AM - 8 PM',
             'market': 'Closed',
         },
         '3': {
-            'main': '11 AM - 8 PM',
+            'main': 'Open 11 AM - 8 PM',
             'market': 'Closed',
         },
         '4': {
-            'main': '11 AM - 8 PM',
+            'main': 'Open 11 AM - 8 PM',
             'market': 'Closed',
         },
         '5': {
-            'main': '11 AM - 8 PM',
-            'market': '9 AM - 5 PM',
+            'main': 'Open 11 AM - 8 PM',
+            'market': 'Open 9 AM - 5 PM',
         },
         '6': {
-            'main': '11 AM - 8 PM',
-            'market': '9 AM - 5 PM',
+            'main': 'Open 11 AM - 8 PM',
+            'market': 'Open 9 AM - 5 PM',
         },
     }
 
@@ -80,8 +80,8 @@ CreateHeader = () => {
                                     <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
                                 </a>
                             </div>
-                            <!-- <label class="row justify-content-center">Open ${hoursOfOperations[currentDayOfWeek].main}</label> -->
-                            <label class="row justify-content-center">Not Open Yet</label>
+                            <!-- <label class="row justify-content-center">${hoursOfOperations[currentDayOfWeek].main}</label> -->
+                            <label class="row justify-content-center">Closed</label>
                         </span>
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
@@ -90,7 +90,7 @@ CreateHeader = () => {
                                     <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
                                 </a>
                             </div> 
-                            <label class="row justify-content-center">Open ${hoursOfOperations[currentDayOfWeek].market}</label>                             
+                            <label class="row justify-content-center">${hoursOfOperations[currentDayOfWeek].market}</label>                             
                         </span>
                     </div>
                 </div>
