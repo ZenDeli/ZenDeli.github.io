@@ -2,7 +2,8 @@ CreateHeader = () => {
     var isOnHomePage, isOnMenuPage, isOnLocationPage, isOnAboutPage = false;
     var active = " active text-primary";
 
-    const currentDayOfWeek = new Date().getDay();
+    const today = new Date();
+    const currentDayOfWeek = today.getDay();
 
     switch (location.pathname) {
         case "/":
@@ -80,8 +81,9 @@ CreateHeader = () => {
                                     <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
                                 </a>
                             </div>
-                            <!-- <label class="row justify-content-center">${hoursOfOperations[currentDayOfWeek].main}</label> -->
-                            <label class="row justify-content-center">Closed Today</label>
+                            <label class="row justify-content-center">
+                                ${today > new Date("2021/03/29") ? hoursOfOperations[currentDayOfWeek].main : "Closed Today"}
+                            </label>
                         </span>
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
