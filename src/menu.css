@@ -1,5 +1,5 @@
 .main-body {
-    background: rgb(245, 255, 245);
+    background: rgb(209, 221, 209);
 }
 .hidden {
     display: none;
@@ -16,34 +16,18 @@
     background: rgba(212, 212, 212, 0.466);
 }
 
-.background-grey {
-    background: rgb(220, 241, 240);
+img {
+    width: inherit;
 }
 
-.text-warning-2 {
-    color: rgb(233, 172, 6);
+#ssapps {
+
 }
 
-.menu-item:hover {
-    cursor: pointer;
+#sandwiches {
+    
 }
 
-.menu-item:hover * {
-    cursor: pointer;
-    font-style: italic;
-    font-weight: 600 !important;
-}
+#drinks {
 
-.modal {
-    max-height: 98vh;
-}
-
-.modal-ingredients-container,
-.modal-flavors-container {
-    background: rgb(240, 247, 246);
-    border-radius: 5px;
-}
-
-h3, h5 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
