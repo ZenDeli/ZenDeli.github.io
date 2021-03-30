@@ -16,18 +16,22 @@
     background: rgba(212, 212, 212, 0.466);
 }
 
-img {
-    width: inherit;
+.menu > img:hover {
+    cursor: pointer;
 }
 
-#ssapps {
-
+.modal-body {
+    overflow: scroll;
 }
 
-#sandwiches {
-    
+#imageElement {
+    width: 200% !important;
 }
 
-#drinks {
+.modal-content {
+    max-height: calc(100vh - 75px);
+}
 
+#imageElement {
+    width: auto;
 }

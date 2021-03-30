@@ -73,7 +73,7 @@ CreateHeader = () => {
                         <a class="nav-item nav-link${isOnLocationPage ? active : ""}" href="locations.html">Locations</a>
                         <!-- <a class="nav-item nav-link disabled${isOnAboutPage ? active : ""}" href="aboutus.html">About us</a> -->
                     </div>
-                    <div class="navbar-nav navbar-right d-flex flex-row">
+                    <div class="navbar-nav navbar-right d-flex flex-md-row flex-column">
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">Cape Coral Location:</label>
                             <div class="row justify-content-center">

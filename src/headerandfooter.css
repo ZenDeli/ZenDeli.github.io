@@ -18,6 +18,9 @@ header {
 .phone-label {
     white-space: nowrap;
 }
+.navbar-right {
+    font-size: 0.9em;
+}
 #logo {
     max-width: 120px !important;
 }

@@ -1,3 +1,11 @@
+const showExpandImageModal = (image) => {
+    let imageElement = document.getElementById('imageElement');
+
+    imageElement.setAttribute("src", `assets/menus/${image}.png`);
+
+    setTimeout( _ => {$('#imageModal').modal("show")}, 100 );
+}
+
 const showFoodModal = (item) => {    
     // Find Item in Array
     let foodItem = FoodItems.find(obj => obj.Name == item);

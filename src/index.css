@@ -19,7 +19,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center;
     background-size: cover;
-    height: var(--view-height);
+    min-height: var(--view-height);
 }
 
 .jumbotron-title {

@@ -24,14 +24,33 @@
     <!-- Main Body -->
     <div class="main-body p-2">
         <div class="menu col-12 text-center my-4">
-            <img id="ssapps" src="assets/menus/ssapps.png">
+            <img id="ssapps" class="img-fluid" src="assets/menus/ssapps.png" title="Click to expand image" onclick="showExpandImageModal('ssapps')">
         </div>
         <p>
         <div class="menu col-12 text-center my-4">
-            <img id="sandwhiches" src="assets/menus/sandwhiches.png">
+            <img id="sandwhiches" class="img-fluid" src="assets/menus/sandwiches.png" title="Click to expand image" onclick="showExpandImageModal('sandwiches')">
         </div>
         <div class="menu col-12 text-center my-4">
-            <img id="drinks" src="assets/menus/drinks.png">
+            <img id="drinks" class="img-fluid" src="assets/menus/drinks.png" title="Click to expand image" onclick="showExpandImageModal('drinks')">
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img id="imageElement">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
         </div>
     </div>
     
