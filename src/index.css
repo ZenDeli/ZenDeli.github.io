@@ -27,9 +27,13 @@
 }
 
 .body-title {
-    background: rgba(68, 68, 68, 0.8);
+    background: rgba(253, 248, 227, 0.911);
 }
 
 .section_three {
     background: rgb(238, 228, 228);
+}
+
+.body-alt-color {
+    color: rgb(119, 92, 2);
 }

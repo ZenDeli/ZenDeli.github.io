@@ -91,7 +91,7 @@ CreateHeader = () => {
                                 </a>
                             </div>
                             <label class="row justify-content-center">
-                                ${today > new Date("2021/03/29") ? hoursOfOperations[currentDayOfWeek].main : "Closed Today"}
+                                ${hoursOfOperations[currentDayOfWeek].main}
                             </label>
                         </span>
                         <span class="navbar-text container d-flex flex-column mx-2">
