@@ -86,8 +86,8 @@ CreateHeader = () => {
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">South Fort Myers Location:</label>
                             <div class="row justify-content-center">
-                                <a href="tel:239-362-3049">
-                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                <a href="tel:239-362-3165">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3165
                                 </a>
                             </div>
                             <label class="row justify-content-center">
@@ -97,8 +97,8 @@ CreateHeader = () => {
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
                             <div class="row justify-content-center">
-                                <a href="tel:239-362-3049">
-                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 362 - 3049
+                                <a href="tel:239-313-5272">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
                                 </a>
                             </div> 
                             <label class="row justify-content-center">${hoursOfOperations[currentDayOfWeek].market}</label>                             
@@ -126,8 +126,8 @@ CreateFooter = () => {
                                 Fort Myers, FL 33908
                             </p>
                             <div class="mt-2">
-                                <a class="text-warning" href="tel:239-362-3049">
-                                    <i class="fas fa-phone-alt mr-2"></i>(239) 362 - 3049
+                                <a class="text-warning" href="tel:239-362-3165">
+                                    <i class="fas fa-phone-alt mr-2"></i>(239) 362 - 3165
                                 </a> 
                             </div>
                         </div>
