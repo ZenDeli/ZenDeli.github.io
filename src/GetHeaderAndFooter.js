@@ -77,10 +77,12 @@ CreateHeader = () => {
                         <span class="navbar-text container d-flex flex-column mx-2">
                             <label class="row justify-content-center phone-label">Cape Coral Location:</label>
                             <div class="row justify-content-center">
-                                Coming
+                                <a href="tel:239-541-8163">
+                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 541 - 8163
+                                </a> 
                             </div>
                             <label class="row justify-content-center">
-                                Soon
+                                ${hoursOfOperations[currentDayOfWeek].main}
                             </label>
                         </span>
                         <span class="navbar-text container d-flex flex-column mx-2">
@@ -93,15 +95,6 @@ CreateHeader = () => {
                             <label class="row justify-content-center">
                                 ${hoursOfOperations[currentDayOfWeek].main}
                             </label>
-                        </span>
-                        <span class="navbar-text container d-flex flex-column mx-2">
-                            <label class="row justify-content-center phone-label">Fleamasters FleaMarket:</label>
-                            <div class="row justify-content-center">
-                                <a href="tel:239-313-5272">
-                                    <i class="fas fa-phone-alt"></i>&nbsp;(239) 313 - 5272
-                                </a>
-                            </div> 
-                            <label class="row justify-content-center">${hoursOfOperations[currentDayOfWeek].market}</label>                             
                         </span>
                     </div>
                 </div>
@@ -120,7 +113,7 @@ CreateFooter = () => {
                         </h5>
                         <div>
                             <!-- Main Campus -->
-                            <div class="mt-2 font-weight-bold text-warning">Main Location</div>
+                            <div class="mt-2 font-weight-bold text-warning">Fort Myers Location</div>
                             <p class="text-white mt-2">
                                 15880 San Carlos Blvd. #135<br />
                                 Fort Myers, FL 33908
@@ -132,19 +125,6 @@ CreateFooter = () => {
                             </div>
                         </div>
                         <div class="mt-2">
-                            <!-- Flea Market Stall -->
-                            <div class="mt-4 font-weight-bold text-warning">Fleamasters Flea Market</div>
-                            <p class="text-white mt-2">
-                                4135 Dr. Martin Luther King Jr. Blvd.<br />
-                                Fort Myers, FL 33916
-                            </p>
-                            <div class="mt-2">
-                                <a class="text-warning" href="tel:239-313-5272">
-                                    <i class="fas fa-phone-alt mr-2"></i>(239) 313 - 5272
-                                </a> 
-                            </div>
-                        </div>
-                        <div class="mt-2">
                             <!-- Cape Coral Campus -->
                             <div class="mt-4 font-weight-bold text-warning">Cape Coral Location</div>
                             <p class="text-white mt-2">
@@ -152,7 +132,9 @@ CreateFooter = () => {
                                 Cape Coral, FL 33909
                             </p>
                             <div class="mt-2 text-warning">
-                                Coming Soon
+                                <a class="text-warning" href="tel:239-541-8163">
+                                    <i class="fas fa-phone-alt mr-2"></i>(239) 541 - 8163
+                                </a> 
                             </div>
                         </div>
                     </div>
@@ -164,7 +146,7 @@ CreateFooter = () => {
                             <i class="far fa-clock"></i>&nbsp;HOURS
                         </h5>
                         <div>
-                            <div class="mt-4 font-weight-bold text-warning">Main Location</div>
+                            <div class="mt-4 font-weight-bold text-warning">Fort Myers & Cape Coral Locations</div>
                             <div class="row">
                                 <span class="col col-4 text-left">Monday</span>
                                 <span class="col col-8 text-right">11 AM - 8 PM</span>
@@ -194,37 +176,6 @@ CreateFooter = () => {
                                 <span class="col col-8 text-right">11 AM - 5 PM</span>
                             </div>
                         </div>
-                        <div>
-                            <div class="mt-4 font-weight-bold text-warning">Fleamasters Flea Market</div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Monday</span>
-                                <span class="col col-8 text-right">Closed</span>
-                            </div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Tuesday</span>
-                                <span class="col col-8 text-right">Closed</span>
-                            </div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Wednesday</span>
-                                <span class="col col-8 text-right">Closed</span>
-                            </div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Thursday</span>
-                                <span class="col col-8 text-right">Closed</span>
-                            </div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Friday</span>
-                                <span class="col col-8 text-right">9 AM - 5 PM</span>
-                            </div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Saturday</span>
-                                <span class="col col-8 text-right">9 AM - 5 PM</span>
-                            </div>
-                            <div class="row">
-                                <span class="col col-4 text-left">Sunday</span>
-                                <span class="col col-8 text-right">9 AM - 5 PM</span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             
@@ -249,7 +200,7 @@ CreateFooter = () => {
             </div>
             <div class="d-flex justify-content-center py-4">
                 <span class="text-center d-flex flex-column flex-md-row">
-                    <span class="px-1">&copy; Copyright 2021 ZEN Delicatessen, LLC.</span>
+                    <span class="px-1">&copy; Copyright 2022 ZEN Delicatessen, LLC.</span>
                     <span class="px-1">All rights reserved.</span>
                 </span>
             </div>
